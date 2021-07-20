@@ -19,7 +19,7 @@ function init() {
     createPacman(gBoard);
     createGhosts(gBoard);
     printMat(gBoard, '.board-container');
-    gBoard[gPacman.location.i][gPacman.location.j] = getPacmanHTML(gPacman.direction);
+    renderCell(gPacman.location, getPacmanHTML(gPacman.direction));
     gGame.isOn = true;
     document.querySelector('.modal').style.display = 'none';
     document.querySelector('table').style.display = 'inline';
@@ -80,10 +80,10 @@ function gameOver(isVictory) {
 function cherryOnBoard() {
     gEmptyCells = getEmptyCellInBoard(gBoard);
     var randomCell = getRandomCell(gEmptyCells);
-    if (randomCell<0) return
+    if (randomCell < 0) return
     //update model
     console.log('randomCell : ', randomCell);
-    
+
     gBoard[randomCell.i][randomCell.j] = CHERRY;
     var cellClass = getClassName(randomCell);
     var elCell = document.querySelector('.' + cellClass);
