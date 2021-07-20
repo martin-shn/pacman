@@ -1,0 +1,80 @@
+body {
+  background: rgb(34,193,195);
+  background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  color:white;
+  text-align: center;
+}
+h2{
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+  color: teal;
+  border-bottom: 2px solid teal;
+  background-color: rgb(0,0,0,0.8);
+}
+.modal{
+  height: 100px;
+  width: 20%;
+  min-width: 230px;
+  background-color: teal;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0,0,0,0.2);
+  padding-bottom: 15px;
+  border: 2px dotted rgb(24, 58, 58);
+  box-shadow: black 5px 5px 15px;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 40%;
+  top: 80px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  white-space: nowrap;
+}
+
+.modal-btn{
+  padding: 5px;
+  width: 50%;
+  min-width: 130px;
+  background-color:rgba(255,255,255,0.4) ;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-shadow: white 0px 0px 4px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+table{
+  margin: auto;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.cell {
+  background-color: rgb(0,0,0,0.5);
+  border: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+td img{
+  width:30px;
+  height: 30px;
+  mix-blend-mode: multiply;
+}
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */
+
+#pacman{
+  mix-blend-mode: normal;
+}
