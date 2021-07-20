@@ -57,6 +57,7 @@ function moveGhost(ghost) {
     if (nextCell === CHERRY) return;
     // hitting a pacman?  call gameOver
     if (nextCell === PACMAN) {
+        console.log('ghost eat pacman');    
         if (gPacman.isSuper) {
             return
         } else {
