@@ -67,7 +67,8 @@ function countFood(board) {
 function gameOver(isVictory) {
     // console.log('Game Over');
     gGame.isOn = false;
-    clearInterval(gIntervalGhosts)
+    clearInterval(gIntervalGhosts);
+    clearInterval(gTimerCherry);
     gBoard[gPacman.location.i][gPacman.location.j] = EMPTY;
     renderCell(gPacman.location, EMPTY);
     if (isVictory) document.querySelector('.modal h1').innerText = 'You Win !';
@@ -82,7 +83,6 @@ function cherryOnBoard() {
     var randomCell = getRandomCell(gEmptyCells);
     if (randomCell < 0) return
     //update model
-    console.log('randomCell : ', randomCell);
 
     gBoard[randomCell.i][randomCell.j] = CHERRY;
     var cellClass = getClassName(randomCell);
