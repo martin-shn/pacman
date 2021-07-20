@@ -11,7 +11,7 @@ function createPacman(board) {
         isSuper: false,
         direction: 'right'
     }
-    board[gPacman.location.i][gPacman.location.j] = getPacmanHTML(gPacman.direction);
+    board[gPacman.location.i][gPacman.location.j] = PACMAN;
 }
 
 function movePacman(ev) {
