@@ -3,7 +3,7 @@ const WALL = '#'
 const FOOD = '.'
 const EMPTY = ' ';
 const SUPERFOOD = '&#1421;';
-const CHERRY = '/img/cherry.gif';
+const CHERRY = './img/cherry.gif';
 
 var gBoard;
 var gGame = {
