@@ -89,16 +89,16 @@ function getNextLocation(eventKeyboard) {
 function getPacmanHTML(pacmanDirection) {
     switch (pacmanDirection) {
         case 'up':
-            return `<img id="pacman" style="transform:rotate(270deg)" src="/img/pacman.gif">`;
+            return `<img id="pacman" style="transform:rotate(270deg)" src="../img/pacman.gif">`;
             break;
         case 'down':
-            return `<img id="pacman" style="transform:rotate(90deg)" src="/img/pacman.gif">`;
+            return `<img id="pacman" style="transform:rotate(90deg)" src="../img/pacman.gif">`;
             break;
         case 'right':
-            return `<img id="pacman" style="transform:rotate(0deg)" src="/img/pacman.gif">`;
+            return `<img id="pacman" style="transform:rotate(0deg)" src="../img/pacman.gif">`;
             break;
         case 'left':
-            return `<img id="pacman" style="transform:rotate(180deg)" src="/img/pacman.gif">`;
+            return `<img id="pacman" style="transform:rotate(180deg)" src="../img/pacman.gif">`;
             break;
     }
 }
