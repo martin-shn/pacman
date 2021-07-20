@@ -19,7 +19,7 @@ function init() {
     createPacman(gBoard);
     createGhosts(gBoard);
     printMat(gBoard, '.board-container');
-    board[gPacman.location.i][gPacman.location.j] = getPacmanHTML(gPacman.direction);
+    gBoard[gPacman.location.i][gPacman.location.j] = getPacmanHTML(gPacman.direction);
     gGame.isOn = true;
     document.querySelector('.modal').style.display = 'none';
     document.querySelector('table').style.display = 'inline';
