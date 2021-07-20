@@ -74,7 +74,7 @@ function gameOver(isVictory) {
     if (isVictory) document.querySelector('.modal h1').innerText = 'You Win !';
     else document.querySelector('.modal h1').innerText = 'You Lose !';
     document.querySelector('.modal').style.display = 'inline';
-    document.querySelector('table').style.display = 'none';
+    // document.querySelector('table').style.display = 'none';
 }
 
 
